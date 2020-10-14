@@ -4,7 +4,11 @@
  */
 public class Main {
 
-  public static int firstDigit(int num){
+  public static int lastDigit(int num){
+    //check if it is negative then change it
+    if(num < 0){
+      num = num*-1;
+    }
     //calculating the last digit
     int lastNum = num % 10;
     //returning the answer
@@ -18,7 +22,7 @@ public class Main {
    */
   public static void main(String[] args) {
     //
-    int lastNum = firstDigit(3572);
+    int lastNum = lastDigit(-3572);
     //print answer
     System.out.println(lastNum);
   }
